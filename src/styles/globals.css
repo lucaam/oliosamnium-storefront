@@ -109,4 +109,7 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
+  .text-beige {
+    color: #f8edd8
+  }
 }

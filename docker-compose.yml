@@ -1,0 +1,16 @@
+services:
+  storefront:
+    build: .
+    # image: storefront:test
+    restart: unless-stopped
+    container_name: oliosamnium_storefront
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.local
+    networks:
+      - oliosamnium_storefront_network
+
+networks:
+  oliosamnium_storefront_network:
+    external: true
